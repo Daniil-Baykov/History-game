@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="materialize/css/materialize.css"  media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="materialize/css/style.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+        <h1>VÄRLDENS STORMAKT - THE GAME</h1>
+        <div class="row">
+            <div class="col s2 m2">
+              <div class="card">
+                <div class="card-image">
+                   <img src="materialize/img/osmanska.jpg">
+                   <span class="card-title osmanska">OSMANSKA RIKET</span>
+                    <a id="osmanska-modal" class="btn-floating halfway-fab waves-effect waves-light red btn modal-trigger" href="#länder"><i class="material-icons">create</i></a>
+                </div>
+                    <div class="card-content osmanska">    
+                <ul id="dynamic-list">
+                    <li class="osmanska"><div>MAT: <span id="OSMANSKA-RIKET-MAT"></span></div></li>
+                    <li class="osmanska"><div>MEDBORGARE: <span id="OSMANSKA-RIKET-MEDBORGARE"></span> </div></li>
+                    <li class="osmanska"><div>SOLDATER: <span id="OSMANSKA-RIKET-SOLDATER"></span> </div></li>
+                    <li class="osmanska"><div>HANDELSMÄN: <span id="OSMANSKA-RIKET-HANDELSMÄN"></span></div></li>
+                    <li class="osmanska"><div>BÅTAR: <span id="OSMANSKA-RIKET-BÅTAR"></span></div></li>
+                    <li class="osmanska"><div>GULD: <span id="OSMANSKA-RIKET-GULD"></span></div></li>
+                    <li class="osmanska"><div>SLAVAR: <span id="OSMANSKA-RIKET-SLAVAR"></span></div></li>
+                    <li class="osmanska"><div>TEXTIL: <span id="OSMANSKA-RIKET-TEXTIL"></span></div></li>
+                    <li class="osmanska"><div>ALKOHOL: <span id="OSMANSKA-RIKET-ALKOHOL"></span></div></li>  
+                    <li class="osmanska"><div>KOLONIER: <span id="OSMANSKA-RIKET-KOLONIER"></span></div></li>
+                    <li class="osmanska"><div>HANDEL: <span id="OSMANSKA-RIKET-HANDELSVÄG"></span></div></li>    
+                </ul>
+                      </div>
+                      <div class="card-action osmanska">
+                        <div id="lands"><span id="OSMANSKA-RIKET-RELIGION"></span></div>
+                      </div>
+                </div>
+            </div>
+            <div class="col s2 m2">
+              <div class="card">
+                <div class="card-image">
+                  <img src="materialize/img/spanien.jpg">
+                  <span class="card-title spanien">SPANIEN</span>
+                  <a id="spanien-modal" class="btn-floating halfway-fab waves-effect waves-light red btn modal-trigger" href="#länder"><i class="material-icons">create</i></a>
+                </div>
+                <div class="card-content spanien">
+                <ul>
+                    <li class="spanien"><div>MAT: <span id="SPANIEN-MAT"></span> </div></li>
+                    <li class="spanien"><div>MEDBORGARE: <span id="SPANIEN-MEDBORGARE"></span></div></li>
+                    <li class="spanien"><div>SOLDATER: <span id="SPANIEN-SOLDATER"></span></div></li>
+                    <li class="spanien"><div>HANDELSMÄN: <span id="SPANIEN-HANDELSMÄN"></span></div></li>
+                    <li class="spanien"><div>BÅTAR: <span id="SPANIEN-BÅTAR"></span></div></li>
+                    <li class="spanien"><div>GULD: <span id="SPANIEN-GULD"></span></div></li>
+                    <li class="spanien"><div>SLAVAR: <span id="SPANIEN-SLAVAR"></span></div></li>
+                    <li class="spanien"><div>TEXTIL: <span id="SPANIEN-TEXTIL"></span></div></li>
+                    <li class="spanien"><div>ALKOHOL: <span id="SPANIEN-ALKOHOL"></span></div></li>
+                    <li class="spanien"><div>KOLONIER: <span id="SPANIEN-KOLONIER"></span></div></li>
+                    <li class="spanien"><div>HANDEL <span id="SPANIEN-HANDELSVÄG"></span></div></li>
+                </ul>
+              </div>
+                <div class="card-action spanien">
+                  <div id="lands"><span id="SPANIEN-RELIGION"></span></div>
+                    </div>
+                </div>
+              </div>
+            <div class="col s2 m2">
+                <div class="card">
+                    <div class="card-image">
+                      <img src="materialize/img/england.jpg">
+                      <span class="card-title england">ENGLAND</span>
+                      <a id="england-modal" class="btn-floating halfway-fab waves-effect waves-light red btn modal-trigger" href="#länder"><i class="material-icons">create</i></a>
+                    </div>
+                    <div class="card-content england">    
+                    <ul>
+                        <li class="england"><div>MAT: <span id="ENGLAND-MAT"></span></div></li>
+                        <li class="england"><div>MEDBORGARE: <span id="ENGLAND-MEDBORGARE"></span></div></li>
+                        <li class="england"><div>SOLDATER: <span id="ENGLAND-SOLDATER"></span></div></li>
+                        <li class="england"><div>HANDELSMÄN: <span id="ENGLAND-HANDELSMÄN"></span></div></li>
+                        <li class="england"><div>BÅTAR: <span id="ENGLAND-BÅTAR"></span></div></li>
+                        <li class="england"><div>GULD: <span id="ENGLAND-GULD"></span></div></li>
+                        <li class="england"><div>SLAVAR: <span id="ENGLAND-SLAVAR"></span></div></li>
+                        <li class="england"><div>TEXTIL: <span id="ENGLAND-TEXTIL"></span></div></li>
+                        <li class="england"><div>ALKOHOL: <span id="ENGLAND-ALKOHOL"></span></div></li>
+                        <li class="england"><div>KOLONIER: <span id="ENGLAND-KOLONIER"></span></div></li>
+                        <li class="england"><div>HANDEL: <span id="ENGLAND-HANDELSVÄG"></span></div></li>
+                    </ul>
+                  </div>
+                   <div class="card-action england">
+                    <div id="lands"><span id="ENGLAND-RELIGION"></span></div>
+                  </div>
+                </div>
+              </div>
+                <div class="col s2 m2">
+                  <div class="card">
+                    <div class="card-image">
+                        <img src="materialize/img/nederlanderna.jpg">
+                        <span class="card-title nederlanderna">NEDERLÄNDERNA</span>
+                        <a id="nederlanderna-modal" class="btn-floating halfway-fab waves-effect waves-light red btn modal-trigger" href="#länder"><i class="material-icons">create</i></a>
+                    </div>
+                    <div class="card-content nederlanderna">
+                    <ul>
+                        <li class="nederlanderna"><div>MAT: <span id="NEDERLÄNDERNA-MAT"></span></div></li>
+                        <li class="nederlanderna"><div>MEDBORGARE: <span id="NEDERLÄNDERNA-MEDBORGARE"></span></div></li>
+                        <li class="nederlanderna"><div>SOLDATER: <span id="NEDERLÄNDERNA-SOLDATER"></span></div></li>
+                        <li class="nederlanderna"><div>HANDELSMÄN: <span id="NEDERLÄNDERNA-HANDELSMÄN"></span></div></li>
+                        <li class="nederlanderna"><div>BÅTAR: <span id="NEDERLÄNDERNA-BÅTAR"></span></div></li>
+                        <li class="nederlanderna"><div>GULD: <span id="NEDERLÄNDERNA-GULD"></span></div></li>
+                        <li class="nederlanderna"><div>SLAVAR: <span id="NEDERLÄNDERNA-SLAVAR"></span></div></li>
+                        <li class="nederlanderna"><div>TEXTIL: <span id="NEDERLÄNDERNA-TEXTIL"></span></div></li>
+                        <li class="nederlanderna"><div>ALKOHOL: <span id="NEDERLÄNDERNA-ALKOHOL"></span></div></li>
+                        <li class="nederlanderna"><div>KOLONIER: <span id="NEDERLÄNDERNA-KOLONIER"></span></div></li>
+                        <li class="nederlanderna"><div>HANDEL: <span id="NEDERLÄNDERNA-HANDELSVÄG"></span></div></li>
+                    </ul>
+                  </div>
+                  <div class="card-action nederlanderna">
+                    <div id="lands"><span id="NEDERLÄNDERNA-RELIGION"></span></div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col s2 m2">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="materialize/img/frankrike.jpg">
+                            <span class="card-title frankrike">FRANKRIKE</span>
+                            <a id="frankrike-modal" class="btn-floating halfway-fab waves-effect waves-light red btn modal-trigger" href="#länder"><i class="material-icons">create</i></a>
+                        </div>
+                        <div class="card-content frankrike">
+                          <ul>
+                              <li class="frankrike"><div>MAT: <span id="FRANKRIKE-MAT"></span></div></li>
+                              <li class="frankrike"><div>MEDBORGARE: <span id="FRANKRIKE-MEDBORGARE"></span></div></li>
+                              <li class="frankrike"><div>SOLDATER: <span id="FRANKRIKE-SOLDATER"></span></div></li>
+                              <li class="frankrike"><div>HANDELSMÄN: <span id="FRANKRIKE-HANDELSMÄN"></span></div></li>
+                              <li class="frankrike"><div>BÅTAR: <span id="FRANKRIKE-BÅTAR"></span></div></li>
+                              <li class="frankrike"><div>GULD: <span id="FRANKRIKE-GULD"></span></div></li>
+                              <li class="frankrike"><div>SLAVAR: <span id="FRANKRIKE-SLAVAR"></span></div></li>
+                              <li class="frankrike"><div>TEXTIL: <span id="FRANKRIKE-TEXTIL"></span></div></li>
+                              <li class="frankrike"><div>ALKOHOL: <span id="FRANKRIKE-ALKOHOL"></span></div></li>
+                              <li class="frankrike"><div>KOLONIER: <span id="FRANKRIKE-KOLONIER"></span></div></li>
+                              <li class="frankrike"><div>HANDEL: <span id="FRANKRIKE-HANDELSVÄG"></span></div></li>
+                          </ul>
+                        </div>
+                        <div class="card-action frankrike">
+                          <div id="lands"><span id="FRANKRIKE-RELIGION"></span></div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col s2 m2">
+                          <a href="#!" class="waves-effect waves-light btn-large" id="nästaRunda" onclick="M.toast({html: 'Ny runda', classes: 'rounded'})">Nästa runda</a>
+                      </div>
+                </div>
+              </div>
+                 
+                 <!-- Modal Structure -->
+  <div id="länder" class="modal">
+      <div class="modal-content">
+        <h4>Redigera</h4>
+        <input id="jsonField" field="text-area">
+      </div>
+      <div class="modal-footer">
+        <a id="closeModalBtn" href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+      </div>
+    </div>
+                
+        
+      <!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="materialize/js/materialize.js"></script>
+
+<script>
+$(document).ready(function(){
+  $('select').formSelect();
+})
+
+$(document).ready(function(){
+  $('.modal').modal();
+})
+
+</script>
+
+  </body>
+</html>
+
+<script> 
+
+let currentlyEditing = null
+const gameState = [
+{
+  name: 'OSMANSKA-RIKET',
+  mat: 2000000,
+  medborgare: 40000,
+  soldater: 9000,
+  handelsmän: 10,
+  båtar: 5,
+  guld: 1000,
+  slavar: 0,
+  textil: 3,
+  alkohol: 0,
+  religion: 'Islam',
+  kolonier: 0,
+  handelsväg: 'Sidenvägen'
+},
+{
+  name: 'SPANIEN',
+  mat: 1000000,
+  medborgare: 20000,
+  soldater: 7000,
+  handelsmän: 0,
+  båtar: 60,
+  guld: 1250,
+  slavar: 0,
+  textil: 0,
+  alkohol: 0,
+  religion: 'Katolicism',
+  kolonier: 0,
+  handelsväg: 'Ingen'
+},
+{
+  name: 'ENGLAND',
+  mat: 800000,
+  medborgare: 10000,
+  soldater: 2000,
+  handelsmän: 30,
+  båtar: 25,
+  guld: 500,
+  slavar: 5,
+  textil: 25,
+  alkohol: 50,
+  religion: 'Protestantism',
+  kolonier: 0,
+  handelsväg: 'Ingen'
+},
+{
+  name: 'NEDERLÄNDERNA',
+  mat: 500000,
+  medborgare: 5000,
+  soldater: 1000,
+  handelsmän: 50,
+  båtar: 20,
+  guld: 650,
+  slavar: 2,
+  textil: 30,
+  alkohol: 35,
+  religion: 'Protestantism',
+  kolonier: 0,
+  handelsväg: 'Ingen'
+},
+{
+  name: 'FRANKRIKE',
+  mat: 1000000,
+  medborgare: 15000,
+  soldater: 5000,
+  handelsmän: 1,
+  båtar: 10,
+  guld: 950,
+  slavar: 0,
+  textil: 5,
+  alkohol: 2,
+  religion: 'Katolicism',
+  kolonier: 0,
+  handelsväg: 'Ingen'
+}]
+
+const getRef = (ref) => gameState.find(({name}) => name === ref)
+
+const createTurnDecays = ({name}) => {
+  let countryRef = getRef(name)
+  countryRef.mat = countryRef.mat - (countryRef.medborgare * 2) - (countryRef.soldater * 5)
+  countryRef.guld = Math.round(countryRef.guld + (countryRef.medborgare / 1000))
+  if (countryRef.mat < 0) {
+    countryRef.mat = 0
+    countryRef.medborgare = Math.round(countryRef.medborgare - (countryRef.medborgare * 0.05))
+    countryRef.soldater = Math.round(countryRef.soldater - (countryRef.soldater * 0.01))
+  }
+  if (countryRef.medborgare < 1000) {
+    countryRef.guld = Math.round(countryRef.guld - (countryRef.guld * 0.01))
+  }
+  if (countryRef.religion == 'Islam')
+  {
+    countryRef.guld = Math.round(countryRef.guld + 50)
+  }
+  if (countryRef.religion == 'Katolicism')
+  {
+    countryRef.guld = Math.round(countryRef.guld + 5)
+    countryRef.soldater = Math.round(countryRef.soldater + 50)
+  }
+  if (countryRef.religion == 'Protestantism')
+  {
+    countryRef.guld = Math.round(countryRef.guld + 20)
+    countryRef.handelsmän = Math.round(countryRef.handelsmän + 1)
+  }
+  if(countryRef.kolonier == 1 ){
+    countryRef.guld = Math.round(countryRef.guld + 100)
+    countryRef.mat = Math.round (countryRef.mat - 1000)
+    countryRef.alkohol = Math.round(countryRef.alkohol + 5)
+    countryRef.textil = Math.round(countryRef.textil + 5)
+  }
+  if(countryRef.kolonier == 2 ){
+    countryRef.guld = Math.round(countryRef.guld + 200)
+    countryRef.mat = Math.round (countryRef.mat - 2000 )
+    countryRef.alkohol = Math.round(countryRef.alkohol + 10)
+    countryRef.textil = Math.round(countryRef.textil + 10)
+  }
+  if(countryRef.kolonier == 3 ){
+    countryRef.guld = Math.round(countryRef.guld + 300)
+    countryRef.mat = Math.round (countryRef.mat - 3000)
+    countryRef.alkohol = Math.round(countryRef.alkohol + 15)
+    countryRef.textil = Math.round(countryRef.textil + 15)
+  }
+}
+
+const selector = (id) => document.querySelector(`#${id}`)
+
+const addEventListener = (id, trigger, fn) => selector(id) && selector(id).addEventListener(trigger, fn)
+const removeEventListener = (id, trigger, fn) => selector(id) && selector(id).removeEventListener(trigger, fn)
+
+const updateValueOfProperty = (id, value) => selector(id) && (selector(id).innerHTML = value)
+
+const updateAllCountryKeys = ({name}) => {
+  let countryRef = getRef(name)
+  Object.keys(countryRef).forEach(key => {
+    const value = countryRef[key]
+    key !== name && updateValueOfProperty(`${name}-${key.toUpperCase()}`, value.toString())
+  })
+}
+
+const showGameState = () => gameState.forEach(updateAllCountryKeys)
+
+const handleNextRound = () => {
+  gameState.forEach(createTurnDecays)
+  showGameState()
+}
+
+addEventListener('nästaRunda', 'click', handleNextRound)
+
+const handleEdit = (country) => () => {
+  currentlyEditing = country
+  selector('jsonField').value = JSON.stringify(getRef(country), null, 2)
+}
+
+const saveCurrentlyEditting = (country) => {
+  try {
+    const json = selector('jsonField').value.split(' ').join('')
+    const parsed = JSON.parse(json)
+    Object.assign(getRef(country), parsed)
+    showGameState()
+  } catch (error) {
+    alert('invalid JSON pls call 911')
+    console.log(error)
+  }
+}
+
+addEventListener('closeModalBtn', 'click', () => {
+  saveCurrentlyEditting(currentlyEditing)
+})
+
+addEventListener('spanien-modal', 'click', handleEdit('SPANIEN'))
+addEventListener('osmanska-modal', 'click', handleEdit('OSMANSKA-RIKET'))
+addEventListener('nederlanderna-modal', 'click', handleEdit('NEDERLÄNDERNA'))
+addEventListener('frankrike-modal', 'click', handleEdit('FRANKRIKE'))
+addEventListener('england-modal', 'click', handleEdit('ENGLAND'))
+
+const init = () => {
+  showGameState()
+}
+
+init()
+</script>
