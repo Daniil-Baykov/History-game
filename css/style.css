@@ -1,0 +1,104 @@
+h1 {
+    text-align: center;
+    font-weight: bold; 
+}
+
+body{
+    background-image: url("papyrus.png");
+    /* background-color: #f8fffe; */
+}
+
+h4 {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.card-title{
+    text-align:center;
+    font-weight: bold !important;
+}
+.card-title.osmanska{
+    -webkit-text-fill-color: #b2dfdb; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+    font-size: 20px;
+}
+.card-title.spanien{
+    -webkit-text-fill-color: #e57373; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 20px;
+}
+.card-title.england{
+    -webkit-text-fill-color: #bbdefb; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 20px;
+}
+.card-title.nederlanderna{
+    -webkit-text-fill-color: #ffb74d; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 20px;
+}
+.card-title.frankrike{
+    -webkit-text-fill-color: #64b5f6; 
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 20px;
+}
+.card-content.osmanska{
+    font-weight: bold;
+    background-color: #b2dfdb;
+}
+.card-action.osmanska{
+    background-color: #b2dfdb;
+}
+
+.card-content.spanien {
+    background-color: #e57373 !important;
+    font-weight: bold;
+}
+.card-action.spanien {
+    background-color: #e57373;
+}
+
+.card-content.england {
+    background-color: #bbdefb !important;
+    font-weight: bold;
+}
+.card-action.england {
+    background-color: #bbdefb;
+}
+
+.card-content.nederlanderna {
+    background-color: #ffb74d !important;
+    font-weight: bold; 
+}
+.card-action.nederlanderna {
+    border-color: #9e9e9e;
+    background-color: #ffb74d;
+}
+
+.card-content.frankrike {
+    background-color:#64b5f6 !important;
+    font-weight: bold; 
+}
+.card-action.frankrike {
+    background-color:#64b5f6;
+}
+
+
+.btn-floating{
+    background-color: teal !important;
+}
+.btn-large{
+    color: white !important;
+}
+
+#lands{
+    font-weight: bold !important;
+    text-transform: uppercase;
+    text-align: center;
+}
